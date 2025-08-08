@@ -53,4 +53,3 @@ class Mago(Inimigo):
         # TODO: Faça o Mago(self) retirar vida do Inimigo(inimigo), se baseando na inteligencia atual.
         #Feito!!
         return f"{self.nome}, o Mago atacou {inimigo.nome} causando {dano_total} de dado."
-
