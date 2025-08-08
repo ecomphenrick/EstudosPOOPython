@@ -1,4 +1,5 @@
 # TODO: Use herança para diminuir a repetição de código entre classes relacionadas.
+#Feito, código reduzido
 class Inimigo:
     def __init__(self, nome, vida, defesa, velocidade, dano_base):
         self.nome = nome
@@ -27,6 +28,7 @@ DICA: Repare que as classes Guerreiro e Mago têm muitos atributos e métodos ig
 
 class Guerreiro(Inimigo):
     # TODO: Corrija o 'bug' no construtor
+    #Nao achei
     def __init__(self, nome, vida, defesa, velocidade, forca):
         super().__init__(nome, vida, defesa, velocidade, forca)
         self.forca = forca
@@ -35,11 +37,13 @@ class Guerreiro(Inimigo):
     def atacar(self, inimigo:Inimigo):
         dano_total = self.forca
         # TODO: Faça o Guerreiro(self) retirar vida do Inimigo(inimigo), se baseando na forca atual.
+        #Feito
         return f"{self.nome}, o Guerreiro atacou {inimigo.nome} causando {dano_total} de dado."
     
 
 class Mago(Inimigo):
     # TODO: Corrija o 'bug' no construtor
+    #Nao achei o bug
     def __init__(self, nome, vida, defesa, velocidade, inteligencia):
         super().__init__(nome, vida, defesa, velocidade, inteligencia)
         self.inteligencia = inteligencia
@@ -47,5 +51,6 @@ class Mago(Inimigo):
     def atacar(self, inimigo:Inimigo):
         dano_total = self.inteligencia
         # TODO: Faça o Mago(self) retirar vida do Inimigo(inimigo), se baseando na inteligencia atual.
+        #Feito!!
         return f"{self.nome}, o Mago atacou {inimigo.nome} causando {dano_total} de dado."
 
